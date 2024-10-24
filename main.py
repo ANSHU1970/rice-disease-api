@@ -8,7 +8,6 @@ from io import BytesIO
 from fastapi.middleware.cors import CORSMiddleware
 
 
-
 model = load_model('rice_model.keras')
 class_names = ['bacterial leaf blight',
  'brown spot',
@@ -16,6 +15,7 @@ class_names = ['bacterial leaf blight',
  'leaf blast',
  'leaf scald',
  'narrow brown spot']
+
 
 app = FastAPI()
 
